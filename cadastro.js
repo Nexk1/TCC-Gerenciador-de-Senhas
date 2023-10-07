@@ -1,22 +1,8 @@
-var button = document.querySelector("#submit");
-
-if (button){
-    button.addEventListener("click", function(event){
-        cadastrar()
-    })
-}else {
-    console.log("DEU RUIM")
-}
-
-
 function cadastrar(){
+    var user = document.getElementById('usuario').value;
+    var teste = document.getElementById('teste');
 
-    var user = document.getElementById('usuario').value
-    var email = document.getElementById('email').value
-    var password = document.getElementById('password').value
-    var confirm_password = document.getElementById('confirm_password').value
-
-    console.log(user, email, password, confirm_password)
+    teste.innerHTML = (user);
 }
 
 
