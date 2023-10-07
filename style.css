@@ -4,13 +4,20 @@
 }
 
 .login-container{
-    background-color: rgb(255, 231, 154);
+
     display: flexbox;
     position: absolute;
-    top: 15%;
-    left: 45%;
+    top: 40%;
+    right: 60%;
     width: 30%;
     border-radius: 15px;
+}
+
+.fundo{
+    background:url(imagens/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .login-container input{
@@ -19,21 +26,21 @@
   margin-left: 25px;
   height: 50px;
   box-sizing: border-box;
-  border: 2px solid rgb(139, 79, 0);
+  border: 2px solid rgb(0, 119, 255);
   border-radius: 12px;
 }
 
 .login-container input:hover{
-    border:3px solid rgb(139, 79, 0);
+    border:3px solid rgb(0, 119, 255);
 }
 
 .cadastro-container{
-    background-color: rgb(255, 231, 154);
+
     padding: 15px;
     display: flexbox;
     position: absolute;
-    top: 30%;
-    left: 35%;
+    top: 32%;
+    right: 60%;
     width: 30%;
     border-radius: 15px;
 }
@@ -45,12 +52,12 @@
     margin-left: 25px;
     height: 50px;
     box-sizing: border-box;
-    border: 2px solid rgb(139, 79, 0);
+    border: 2px solid rgb(0, 119, 255);
     border-radius: 12px;
 }
 
 .input-user-email-senha:hover{
-    border:3px solid rgb(139, 79, 0);
+    border:3px solid rgb(0, 119, 255);
 }
 
 .user-email-senha{
@@ -68,11 +75,13 @@
     margin-left: 20%;
     margin-top: 30px;
     margin-bottom: 15px;
-    border: 2px solid rgb(139, 79, 0);
+    border: 2px solid rgb(0, 119, 255);
     border-radius: 15px;
+    background-color: rgb(0, 110, 255);
+    color: rgb(255, 255, 255);
 }
 
 .botao-cadastro:hover{
-    background: black;
-    color: aliceblue;
+    background: rgb(0, 76, 255);
+    color: rgb(255, 255, 255);
 }
