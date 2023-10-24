@@ -1,8 +1,7 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    /* border: 1px solid red; */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .login-container{
@@ -12,7 +11,7 @@
     position: absolute;
     top: 25%;
     right: 60%;
-    width: 575px;
+    width: 30%;
     border-radius: 15px;
 }
 
@@ -109,16 +108,16 @@
 
 .titulo1{
     color: aliceblue;
-    width: 500px;
+    width: 40%;
     height: 40px;
-    margin-left: 28%;
+    margin-left: 22%;
     font-size: 20px;
     margin-bottom: 20px;
-    text-transform: none;
+    text-transform: uppercase;
 
 }
 
-/* .titulo2{
+.titulo2{
     color: aliceblue;
     width: 40%;
     height: 40px;
@@ -126,9 +125,8 @@
     font-size: 20px;
     margin-top: 1px;
     text-transform: uppercase;
-    text-transform: none;
 
-} */
+}
 
 
 .mini-texto1 a{
@@ -141,7 +139,7 @@
     margin-right: 0;
     left: 50px;
     font-size: 15px;
-    margin-top: -55px;
+    margin-top: -45px;
     text-transform: none;
     /* background-color: red; */
 }
@@ -155,9 +153,24 @@
     /* width: 40%; */
     /* height: 40px; */
     left: 75px;
-    margin-left: 125px;
+    margin-left: 120px;
     font-size: 15px;
-    margin-top: -55px;
+    margin-top: -45px;
     text-transform: none;
     /* background-color: orange; */
 }
+
+.quadrado{
+    line-height:0; /* correção para IE (arg!) */
+    width: 950px;
+    height:750px;
+    background-color: rgb(61, 61, 61);
+    border-width: 200px;
+    border-radius: 50px;
+    margin-top: 150px;
+    margin-left: 75px;
+    border: 2px solid rgb(0, 174, 255);
+    
+
+    }
+
