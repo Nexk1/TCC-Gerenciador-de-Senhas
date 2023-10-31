@@ -170,7 +170,66 @@
     margin-top: 150px;
     margin-left: 75px;
     border: 2px solid rgb(0, 174, 255);
-    
+}
 
-    }
+.inicio{
+
+    background-color: black ;
+}
+
+.inicio .quadrado1{
+
+    background-color: black ;
+    line-height:0; /* correção para IE (arg!) */
+    width: 500px;
+    height:1060px;
+    background-color: rgb(38, 38, 38);
+    border-width: 200px;
+    border-radius: 10px;
+    margin-top: 2px;
+    margin-left: 2px;
+    border: 2px solid rgb(0, 174, 255);
+}
+
+.inicio .quadrado2{
+
+    background-color: black ;
+    line-height:0; /* correção para IE (arg!) */
+    width: 600px;
+    height:1062px;
+    background-color: rgb(24, 24, 24);
+    border-width: 200px;
+    border-radius: 10px;
+    margin-top: -1063px;
+    margin-left: 510px;
+    
+}
+
+.inicio .quadrado3{
+
+    background-color: black ;
+    line-height:0; /* correção para IE (arg!) */
+    width: 1017px;
+    height:650px;
+    background-color: rgb(61, 61, 61);
+    border-width: 200px;
+    border-radius: 10px;
+    margin-top: -1063px;
+    margin-left: 1113px;
+}
+
+.inicio .quadrado4{
+
+    background-color: black ;
+    line-height:0; /* correção para IE (arg!) */
+    width: 1017px;
+    height: 410px;
+    background-color: rgb(42, 42, 42);
+    border-width: 200px;
+    border-radius: 10px;
+    margin-top: 3px;
+    margin-left: 1113px;
+}
+
+
 
