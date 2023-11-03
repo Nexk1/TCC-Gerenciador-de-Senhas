@@ -181,7 +181,7 @@
 
     background-color: black ;
     line-height:0; /* correção para IE (arg!) */
-    width: 500px;
+    width: 405px;
     height:1060px;
     background-color: rgb(38, 38, 38);
     border-width: 200px;
@@ -201,7 +201,7 @@
     border-width: 200px;
     border-radius: 10px;
     margin-top: -1063px;
-    margin-left: 510px;
+    margin-left: 410px;
     
 }
 
@@ -215,7 +215,7 @@
     border-width: 200px;
     border-radius: 10px;
     margin-top: -1063px;
-    margin-left: 1113px;
+    margin-left: 1013px;
 }
 
 .inicio .quadrado4{
@@ -228,8 +228,97 @@
     border-width: 200px;
     border-radius: 10px;
     margin-top: 3px;
-    margin-left: 1113px;
+    margin-left: 1013px;
 }
 
+.pesquisa{
+    line-height:0; /* correção para IE (arg!) */
+    width: 500px;
+    height: 40px;
+    background-color: rgb(42, 42, 42);
+    border-width: 200px;
+    border-radius: 10px;
+    margin-top: -1050px;
+    margin-left: 460px;
+    border: 2px solid rgb(80, 80, 80);
+}
 
+.pesquisar{
+    color: rgb(73, 73, 73);
+    margin-top: 20px;
+    margin-left: 200px;   
+}
 
+.icon-pesquisa{
+    margin-top: -12px;
+    margin-left: 20px; 
+}
+
+.titulo-qd1{
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 40px;
+
+}
+
+.txt1{
+    color: rgb(100, 100, 100);
+    font-size: 25px;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+.txt2{
+    color: rgb(255,255,255);
+    font-size: 25px;
+    margin-top: 100px;
+    margin-left: 80px;
+}
+
+.icon-senhas{
+    margin-top: -12px;
+    margin-left: 45px;
+}
+
+.txt3{
+    color: rgb(255,255,255);
+    font-size: 25px;
+    margin-top: 100px;
+    margin-left: 80px;
+}
+
+.icon-ip{
+    margin-top: -12px;
+    margin-left: 45px;
+}
+
+.txt4{
+    color: rgb(255,255,255);
+    font-size: 25px;
+    margin-top: 100px;
+    margin-left: 80px;
+}
+.icon-notas{
+    margin-top: -12px;
+    margin-left: 45px;
+}
+
+.txt5{
+    color: rgb(255,255,255);
+    font-size: 25px;
+    margin-top: 100px;
+    margin-left: 80px;
+}
+.icon-pi{
+    margin-top: -12px;
+    margin-left: 45px;
+}
+
+.contas{
+  line-height:0; /* correção para IE (arg!) */
+    height: 40px;
+    background-color: rgb(42, 42, 42);
+    margin-left: 20px;
+    margin-bottom: 20;
+}
