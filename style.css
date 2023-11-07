@@ -160,17 +160,26 @@
     /* background-color: orange; */
 }
 
-.quadrado{
-    line-height:0; /* correção para IE (arg!) */
-    width: 950px;
-    height:750px;
-    background-color: rgb(61, 61, 61);
-    border-width: 200px;
-    border-radius: 50px;
+.quadrado {
+    width: 350px;
+    height: 500px;
+    background-color: rgb(126, 126, 126);
+    border-radius: 10px;
     margin-top: 150px;
-    margin-left: 75px;
+    margin-left: 150px;
     border: 2px solid rgb(0, 174, 255);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.quadrado p {
+    white-space: normal;
+    color: #000000;
+}
+
 
 .inicio{
 
@@ -399,4 +408,37 @@
 .estrelas{
     margin-left: 32px;
     margin-top: 5px;
+}
+.botao-recsenha{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 40%;
+    height: 40px;
+    margin-left: 0%;
+    margin-top: 5%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    background-color: rgb(0, 110, 255);
+    color: rgb(255, 255, 255);
+}
+.inserir-codigo{
+    
+    padding: 10px;
+    display: flexbox;
+    top: 5%;
+    right: 50%;
+    width: 70%;
+    border-radius: 15px;
+}
+.botao-reenviar{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 40%;
+    height: 40px;
+    margin-left: -90%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    background-color: rgb(0, 110, 255);
+    color: rgb(255, 255, 255);
+
 }
