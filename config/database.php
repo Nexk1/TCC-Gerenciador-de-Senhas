@@ -93,6 +93,12 @@ return [
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
 
+        'sqlite' => [
+            'driver' => 'sqlite',
+            'database' => database_path('tcc-laravel-usuarios.db'),
+            'prefix' => '',
+        ],
+
     ],
 
     /*

@@ -18,9 +18,9 @@
 
         <input type="password" name="confirm-senha" placeholder="Confirmar Senha" class="input-user-email-senha" required>
 
-        <input type="submit" name="submit" class="botao-cadastro" placeholder="Cadastro">
+        <input type="submit" value="Cadastro" class="botao-cadastro">
     
-    </form>z
+    </form>
     <a href="/" class="botao-voltar">Voltar</a>
     </div>
 @endsection
