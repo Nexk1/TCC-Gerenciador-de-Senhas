@@ -161,13 +161,13 @@
 }
 
 .quadrado {
-    width: 350px;
+    width: 750px;
     height: 500px;
-    background-color: rgb(126, 126, 126);
+    background-color: rgb(38,38,38);
     border-radius: 10px;
-    margin-top: 150px;
-    margin-left: 150px;
-    border: 2px solid rgb(0, 174, 255);
+    margin-top: 200px;
+    margin-left: 200px;
+    border: 2px solid rgb(255, 255, 255);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -177,7 +177,10 @@
 
 .quadrado p {
     white-space: normal;
-    color: #000000;
+    color: #ffffff;
+    text-align: justify;
+    font-size: 25px;
+    padding: 20px;
 }
 
 
@@ -476,4 +479,19 @@
     background-color: rgb(0, 110, 255);
     color: rgb(255, 255, 255);
 
+}
+
+.formulario-codigo{
+    margin-top: 50px;
+
+}
+
+.input-email-esqueceu{
+
+    width: 800px;
+}
+
+.esq-email-txt{
+
+    text-align: center;
 }

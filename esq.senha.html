@@ -8,14 +8,19 @@
 </head>
 <body class="fundo">
     <div class="quadrado">
-        <p>Olá!</p><br><br><br>
-        <p>Enviamos um código de verificação para o seu endereço de e-mail registrado no nome de [KeyGuardian].</p>
-        <p>Se você solicitou esse código, utilize-o para fazer a recuperação de senha. No entanto, se você não solicitou este código ou não reconhece essa atividade, recomendamos alterar sua senha.</p><br><br><br><br>
-        <form id="RecSenha">
-            <input type="text" id="Cod-Rec" name="Código de Recuperação" placeholder="Código de Recuperação" class="inserir-codigo" required>
-            <button id="submit" class="botao-recsenha" value="true">Recuperar Senha</button>
-            <button id="alert-button" class="botao-reenviar" onclick="alert('O código foi enviado novamente.');">Reenviar Código
-                
+        <p>Insira o email abaixo.</p>
+        <div class="formulario-codigo">
+            <form id="RecSenha">
+                <div class="input-email-esqueceu">
+                    <input type="text" id="esq-email" name="Código de Recuperação" placeholder="Email" class="inserir-codigo" required>
+                </div>
+                <div class="esq-email-txt">
+                    <button id="submit" class="botao-recsenha" value="true">Enviar código</button>
+                </div> 
+                </div>
+            </form>     
+        </div>
+           
     </div>
 </body>
 </html>
