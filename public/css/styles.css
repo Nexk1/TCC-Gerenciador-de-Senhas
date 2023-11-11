@@ -4,6 +4,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    height: 600px;
+    width: 1200px;
+}
+
 .login-container{
 
     padding: 15px;
@@ -164,7 +169,6 @@ border-radius: 12px;
     font-size: 20px;
     margin-top: 1px;
     text-transform: uppercase;
-
 }
 
 
@@ -222,42 +226,117 @@ border-radius: 12px;
 
 .inicio{
 
-    background-color: black ;
+    background-color: rgb(38, 38, 38);
 }
 
 .inicio .quadrado1{
-
-    background-color: black ;
+    background-color: rgb(38, 38, 38);
     line-height:0; /* correção para IE (arg!) */
     width: 405px;
-    height: 980px;
+    height: 930px;
     background-color: rgb(38, 38, 38);
     border-width: 200px;
-    border-radius: 10px;
     margin-top: 2px;
     margin-left: 2px;
-    border: 2px solid rgb(0, 174, 255);
+    border: 2px solid rgb(38, 38, 38);
 }
+
+.logout{
+    color: white;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 35px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.logout{
+    color: rgb(185, 185, 185);
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 35px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.link-logout{
+    text-decoration: none;
+    color: white;
+}
+
+.link-logout:hover{
+    text-decoration: none;
+    color: rgb(185, 185, 185);;
+    
+}
+
+
 
 .inicio .quadrado2{
 
     background-color: black ;
     line-height:0; /* correção para IE (arg!) */
-    width: 600px;
-    height:1062px;
+    width: 1469px;
+    height:1076px;
     background-color: rgb(24, 24, 24);
     border-width: 200px;
-    border-radius: 10px;
-    margin-top: -1063px;
+    border: 5px solid rgb(24, 24, 24);
+
+    margin-top: -1059px;
     margin-left: 410px;
     
 }
 
-.inicio .quadrado3{
+.SHOW{
+    color:white;
+    margin-top: 200px;
+    width: 1260px;
+    height: 650px;
+    margin-left:440px; 
+    position:absolute;
+    overflow:auto;
+    transition: 0s;
+    
+    
+}
 
+.SHOW::-webkit-scrollbar-track {
+    border: 1px solid #000;
+    padding: 2px 0;
+    background-color: #404040;
+    border-radius: 15px;
+  }
+ 
+ 
+ .SHOW::-webkit-scrollbar {
+ width: 7px;
+ border-radius: 15px;
+ }
+ 
+ 
+ .SHOW::-webkit-scrollbar-thumb {
+ box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+ background-color: #737272;
+ border: 1px solid #000;
+ border-radius: 500px;
+ }
+ 
+
+.show-box{
+    font-size: 25px;
+    margin: 15px;
+    background-color: rgb(40, 40, 40);
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.inicio .quadrado3{
+    display: none;
+    position: absolute;
     background-color: black ;
     line-height:0; /* correção para IE (arg!) */
-    width: 996px;
+    width: 862px;
     height:650px;
     background-color: rgb(61, 61, 61);
     border-width: 200px;
@@ -266,16 +345,48 @@ border-radius: 12px;
     margin-left: 1013px;
 }
 
-.inicio .quadrado4{
+.profile-img{
+    position: absolute;
+    margin-top: 225px;
+    margin-left: 300px;
+    width: 200px;
+    height: 200px;
+    box-shadow:2px 1px  30px #000 ;
+}
 
+.profile-name{
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-top: 275px;
+    margin-left: 400px;
+}
+
+.pi-voltar{
+    margin-top: 175px;
+    margin-left: 25px;
+    font-size: 55px;
+    color: white;
+    border: transparent;
+    text-decoration: none;
+}
+
+.pi-voltar:hover{
+    color: #CCC;
+}
+
+.inicio .quadrado4{
+    display: none;
+    position: absolute;
     background-color: black ;
     line-height:0; /* correção para IE (arg!) */
-    width: 996px;
+    width: 862px;
     height: 410px;
-    background-color: rgb(42, 42, 42);
+    background-color: rgb(61, 61, 61);
     border-width: 200px;
     border-radius: 10px;
-    margin-top: 3px;
+    margin-top: -410px;
     margin-left: 1013px;
 }
 
@@ -283,22 +394,29 @@ border-radius: 12px;
     line-height:0; /* correção para IE (arg!) */
     width: 500px;
     height: 40px;
-    background-color: rgb(42, 42, 42);
     border-width: 200px;
     border-radius: 10px;
     margin-top: -970px;
-    margin-left: 460px;
-    border: 2px solid rgb(80, 80, 80);
+    margin-left: 460px;;
+
 }
 
 .pesquisar{
-    color: rgb(73, 73, 73);
-    margin-top: 20px;
-    margin-left: 200px;   
+    position: absolute;
+    width: 375px;
+    height: 25px;
+    color: white;   
+    background-color: rgb(42, 42, 42);
+    border: none; 
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 55px;
 }
 
 .icon-pesquisa{
-    margin-top: -12px;
+    position: absolute;
+    margin-top: 50px;
     margin-left: 20px; 
 }
 
@@ -339,11 +457,7 @@ border-radius: 12px;
     margin-left: 80px;
 }
 
-.icon-senhas{
-    position: absolute;
-    margin-top: 15px;
-    margin-left: 45px;
-}
+
 
 .txt3{
     color: rgb(255, 255, 255);
@@ -360,10 +474,7 @@ border-radius: 12px;
         margin-left: 80px;
 }
 
-.icon-ip{
-    margin-top: 70px;
-    margin-left: 45px;
-}
+
 
 .txt4{
     color: rgb(255, 255, 255);
@@ -381,8 +492,17 @@ border-radius: 12px;
 }
 
 .icon-notas{
-    margin-top: 72px;
+    position: absolute;
+    margin-top: 110px;
     margin-left: 45px;
+    margin-right: 0;
+    
+}
+
+.notas-txt{
+    position: absolute;
+    margin-top: 65px;
+    
 }
 
 .txt5{
@@ -401,8 +521,22 @@ border-radius: 12px;
 }
 
 .icon-pi{
-    margin-top: 73.5px;
+    position: absolute;
+    margin-top: 250px;
     margin-left: 45px;
+}
+
+.pi-txt{
+    position: absolute;
+    text-align: left;
+    margin-top: 180px;
+    margin-left: 85px;
+    width: 275px;
+    height: 50px;
+    color: white;
+    font-size: 25px;
+    border: transparent;
+    background-color: transparent;
 }
 
 .contas-inicio{
@@ -418,48 +552,7 @@ border-radius: 12px;
     border-radius: 5px;  
 }
 
-.SHOW{
-    color:white;
-    margin-top: 200px;
-    width: 520px;
-    height: 650px;
-    margin-left:440px; 
-    position:absolute;
-    overflow:auto;
-    
-    
-}
 
-.SHOW::-webkit-scrollbar-track {
-    border: 1px solid #000;
-    padding: 2px 0;
-    background-color: #404040;
-    border-radius: 15px;
-  }
- 
- 
- .SHOW::-webkit-scrollbar {
- width: 7px;
- border-radius: 15px;
- }
- 
- 
- .SHOW::-webkit-scrollbar-thumb {
- box-shadow: inset 0 0 6px rgba(0,0,0,.3);
- background-color: #737272;
- border: 1px solid #000;
- border-radius: 500px;
- }
- 
-
-.show-box{
-    font-size: 25px;
-    margin: 15px;
-    background-color: rgb(40, 40, 40);
-    border-radius: 5px;
-    padding: 5px;
-    padding-left: 10px;
-}
 
 .add-conta{
     margin-top: -85px;
@@ -472,37 +565,56 @@ border-radius: 12px;
 .icon-add-conta{
     position: absolute;
     margin-left: 690px;
-    margin-top: -335px;
-
+    margin-top: -40px;
+    
 }
 
-.config h3{
-    margin-top: -34px;
-    margin-left: 35px;
-    font-size: 25px;
-    color: white;
-
+.linha-divisoria{
+    margin-top: 475px;
+    
 }
 
-.contato{
-    margin-top: 20px;
-    margin-left: 40px;
-    font-size: 20px;
-}
 
-.contato h3{
-    margin-top: -30px;
-    margin-left: 35px;
+.config{
+    position: absolute;
+    margin-top: 505px;
+    margin-left: 45px;
     font-size: 25px;
     color: white;
 }
 
-.avaliar p{
-    margin-top: 35px;
+.config-txt{
+    position: absolute;
+    margin-top: -35px;
     margin-left: 35px;
+    font-size: 25px;
+    color: white;
+}
+
+.nos-avalie{
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 45px;
     font-size: 30px;
     color: white;
 }
+
+.contato{
+    position: absolute;
+    margin-top: 575px;
+    margin-left: 45px;
+    font-size: 20px;
+}
+
+.contate-nos{
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 35px;
+    width: 350px;
+    font-size: 25px;
+    color: white;
+}
+
 
 .estrelas input[type=radio] {
   display: none;
@@ -521,8 +633,9 @@ border-radius: 12px;
 }
 
 .estrelas{
-    margin-left: 32px;
-    margin-top: 5px;
+    margin-left: 45px;
+    margin-top: 675px;
+    margin-bottom: 65px;
 }
 .botao-recsenha{
     font-family: Arial, Helvetica, sans-serif;
@@ -595,8 +708,28 @@ border-radius: 12px;
     color: #000;
 }
 
-.checkboxadduser{
-    margin-left: 150px;
+.rnd-pass{
+    text-decoration: none;
+    padding-top: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 680px;
+    height: 40px;
+    padding-bottom: 10px;
+    margin-left: 55px;
+    margin-top: 150px;
+    border: 2px solid rgb(0, 128, 255);
+    border-radius: 15px;
+    background-color: rgb(0, 128, 255);
+    color: rgb(255, 255, 255);
+}
+
+.rnd-pass:hover{
+    border: 2px solid rgb(0, 60, 121);
+    border-radius: 15px;
+    background-color: rgb(0, 60, 121);
+    color: rgb(255, 255, 255);
 }
 
 .add-pass-user-local{
@@ -619,7 +752,7 @@ border-radius: 12px;
     height: 40px;
     padding-bottom: 10px;
     margin-left: 55px;
-    margin-top: 150px;
+    margin-top: 50px;
     margin-bottom: 50px;
     border: 2px solid rgb(0, 128, 255);
     border-radius: 15px;

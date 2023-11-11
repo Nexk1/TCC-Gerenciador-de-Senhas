@@ -75,7 +75,8 @@ class TccController extends Controller{
         }
     }
 
-    public function login($page_id){
+    public function login(Request $request, $page_id){
+        $pesquisa = $request -> input('pesquisar');
         $fundo = "inicio";
         $user = User::where('page_id', $page_id)->first();
     
@@ -83,11 +84,22 @@ class TccController extends Controller{
             return redirect()->route("tela-login");
         }
         
-        $username = $user->name;
+        if($pesquisa == ""){
+            $username = $user->name;
 
-        $senhas = SenhaUser::where('page_id', $page_id)->get();
+            $senhas = SenhaUser::where('page_id', $page_id)->get();
 
-        return view("gerenciador.logado", ["user" => $user, "username" => $username, "fundo" => $fundo, "page_id" => $user -> page_id, "senhas" => $senhas]);
+            return view("gerenciador.logado", ["user" => $user, "username" => $username, "fundo" => $fundo, "page_id" => $user -> page_id, "senhas" => $senhas]);
+        }else{
+
+            $username = $user->name;
+
+            $senhas = SenhaUser::where('page_id', $page_id)->where('local',$pesquisa)
+            ->get();
+
+            return view("gerenciador.logado", ["user" => $user, "username" => $username, "fundo" => $fundo, "page_id" => $user -> page_id, "senhas" => $senhas]);;
+        }
+
     }
 
 
@@ -110,25 +122,14 @@ class TccController extends Controller{
 
         $local = $request->input('local');
         $senha_user = $request->input('senha');
-        $checkbox = $request->input("checkbox");
+        $action = $request->input('action');
         
         
     
-    if($senha_user == ""){
+    if($action == "Senha Gerada"){
 
 
-        if($checkbox == null){
-            echo '<script>';
-            echo 'alert("Coloque uma senha! Ou marque a checkbox");';
-            echo '</script>';
-            $fundo = "mudar_pass";
-
-            return view("gerenciador.addpassuser", ["user" => $user, "username" => $username, "fundo" => $fundo, "page_id" => $page_id]);
-        }
-
-        else{
-
-        $senha = Str::random(8);
+        $senha = Str::random(12);
 
         $existingSenha = SenhaUser::where('page_id', $page_id)
         ->where('local', $local)
@@ -137,41 +138,52 @@ class TccController extends Controller{
         if ($existingSenha) {
             $existingSenha->senha = $senha;
             $existingSenha->save();
+
         } else {
             $novasenha = new SenhaUser();
             $novasenha->local = $local;
             $novasenha->senha = $senha;
             $novasenha->page_id = $page_id;
             $novasenha->save();
+
         }
 
         $senhas = SenhaUser::where('page_id', $page_id)->get();
+        return redirect()->route("login", ["user" => $user, "username" => $username, "fundo" => $fundo, "page_id" => $user -> page_id, "senhas" => $senhas]);
 
-        return view("gerenciador.logado", ["user" => $user, "username" => $username, "fundo" => $fundo, "page_id" => $user -> page_id, "senhas" => $senhas]);
     }
-}
-    else{
-        $existingSenha = SenhaUser::where('page_id', $page_id)
-        ->where('local', $local)
-        ->first();
+    elseif($action == "Cadastro"){
 
-        if ($existingSenha) {
-            $existingSenha->senha = $senha_user;
-            $existingSenha->save();
+        if($senha_user == ""){
+            echo '<script>';
+            echo 'alert("Coloque a senha que deseja antes");';
+            echo '</script>';
+            $fundo = "mudar_pass";
+            return view("gerenciador.addpassuser", ["user" => $user, "username" => $username, "fundo" => $fundo, "page_id" => $user -> page_id,]);
+        }
+        else{
+            $existingSenha = SenhaUser::where('page_id', $page_id)
+            ->where('local', $local)
+            ->first();
 
-            $senhas = SenhaUser::where('page_id', $page_id)->get();
+            if ($existingSenha) {
+                $existingSenha->senha = $senha_user;
+                $existingSenha->save();
 
-            return view("gerenciador.logado", ["user" => $user, "username" => $username, "fundo" => $fundo, "page_id" => $user -> page_id, "senhas" => $senhas]);
-        } else {
-            $novasenha = new SenhaUser();
-            $novasenha->local = $local;
-            $novasenha->senha = $senha_user;
-            $novasenha->page_id = $page_id;
-            $novasenha->save();
+                $senhas = SenhaUser::where('page_id', $page_id)->get();
 
-            $senhas = SenhaUser::where('page_id', $page_id)->get();
+                return redirect()->route("login", ["user" => $user, "username" => $username, "fundo" => $fundo, "page_id" => $user -> page_id, "senhas" => $senhas]);
+            } else {
+                $novasenha = new SenhaUser();
+                $novasenha->local = $local;
+                $novasenha->senha = $senha_user;
+                $novasenha->page_id = $page_id;
+                $novasenha->save();
 
-        return view("gerenciador.logado", ["user" => $user, "username" => $username, "fundo" => $fundo, "page_id" => $user -> page_id, "senhas" => $senhas]);
+                $senhas = SenhaUser::where('page_id', $page_id)->get();
+
+                return redirect()->route("login", ["user" => $user, "username" => $username, "fundo" => $fundo, "page_id" => $user -> page_id, "senhas" => $senhas]);
+            }
         }
     }
     }
