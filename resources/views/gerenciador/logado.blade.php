@@ -9,7 +9,7 @@
 
         <div class="txt1">COFRE</div>
 
-        <p class="notas-txt">Notas seguras</p>
+        <a href="/User/{{$page_id}}/notas"><p class="notas-txt">Notas seguras</p></a>
         <div class="icon-notas"></div>
 
         
